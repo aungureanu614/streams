@@ -3,7 +3,7 @@ var rando = new RandomNums();
 var Transform = require("./transform");
 var trans = new Transform();
 var Cache = require("./cache");
-var cache = new Cache('test');
+var cache = new Cache('Random Numbers');
 
 rando.pipe(trans);
 trans.pipe(cache);

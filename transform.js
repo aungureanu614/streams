@@ -9,7 +9,7 @@ Transform.prototype = Object.create(stream.Transform.prototype);
 Transform.prototype.constructor = Transform;
 
 Transform.prototype._transform = function(chunk, encoding, callback) {
-     if(Number(chunk) < 100){
+     if(parseInt(chunk) < 100){
          this.push(chunk, encoding);
      }
   callback();
